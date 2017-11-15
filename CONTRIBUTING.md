@@ -36,7 +36,7 @@ The free tier description should reflect what is offered in the free tier, not t
 
 **Limitations**
 
-Any limitation that is not critical* should be stated in the *Limitations* section of each service. A limitation should be understood as something which is not directly part of the free tier description but important to know. For example, "100Mb bucket for free" should be part of the free tier description and not the limitations section.
+imitation that is not critical* should be stated in the *Limitations* section of each service. A limitation should be understood as something which is not directly part of the free tier description but important to know. For example, "100Mb bucket for free" should be part of the free tier description and not the limitations section.
 
 ###### \* Because a critical limitation may exclude the service from this list.
 
