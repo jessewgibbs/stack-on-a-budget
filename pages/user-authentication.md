@@ -6,7 +6,9 @@
 - [AWS Cognito](#aws-cognito)
 - [Firebase authentication](#firebase-authentication)
 - [Ionic Auth](#ionic-auth)
-- [Stormpath](#stormpath)
+- [LoginRadius](#loginradius)
+- [Okta](#okta)
+- [Visual Studio Mobile Center](#visual-studio-mobile-center)
 
 <!-- /TOC -->
 
@@ -40,9 +42,29 @@
 * *Free tier*: always free, unlimited users
 * *Pros*: offers multiple login providers (email, custom with in-app browser, Google, Facebook, Twitter, GitHub, Instagram, LinkedIn), provide forms
 
-## Stormpath
+## LoginRadius
 
-[Pricing Page](https://stormpath.com/pricing)
+[Pricing Page](https://www.loginradius.com/pricing/)
 
-- *Free tier*: unlimited users, 10k API calls/mo
-- *Pros*: complete user authentication, authorization and management through their API, client libraries for multiple languages
+* *Free tier*: 1 Web or Mobile App, Standard Login, 3 Social Providers, Managed Auth Page, 5000 Monthly Active Users 
+* *Pros*: Complete Authentication with Managed Login Page, full customization of the login page and prebuilt themes available, self-serve dashboard and documentation, transactional emails & template customization, SDKs of popular programming languages, and demos.
+* *Limitations*: active users are users who logged in the last 30 days.
+
+## Okta
+
+[Pricing Page](https://developer.okta.com/pricing/)
+
+- *Free tier*: Up to 7,000 monthly active users, Up to 10 custom apps, OAuth 2.0 & OpenID Connect.
+- *Pros*: Complete authentication, authorization and user management through their API, client libraries for multiple languages.
+
+## Visual Studio Mobile Center
+
+[Pricing Page](https://docs.microsoft.com/en-us/mobile-center/general/pricing)
+
+* *Free tier*: 10 mobile apps and 500 active users while in preview
+* *Pros*: offers multiple login providers (Azure Active Directory, Microsoft Account, Facebook, Google, Twitter), client libraries for iOS, Android, Cordova, Windows, Xamarin.Android, Xamarin.iOS, Xamarin.Forms), UI support
+
+
+
+
+
