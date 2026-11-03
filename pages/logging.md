@@ -2,12 +2,49 @@
 
 <!-- TOC depthFrom:2 -->
 
+- [Application Insights](#application-insights)
+- [Bugfender](#bugfender)
+- [HyperDX](#hyperdx)
+- [LogDog](#logdog)
 - [Logentries](#logentries)
 - [Loggly](#loggly)
+- [Logsene](#logsene)
+- [New Relic](#new-relic)
 - [Splunk](#splunk)
 - [Sumologic](#sumologic)
 
 <!-- /TOC -->
+
+## Application Insights
+
+[Pricing Page](https://azure.microsoft.com/en-us/pricing/details/application-insights/)
+
+* *Free tier*: Send up to 1GB/month, 90 day retention
+* *Pros*: Provides a powerful analytics query language, supports numerous platform SDKs (e.g. Node.js, .NET), and comes with a comprehensive APM
+* *Exceeding the free tier*: $2.30/GB of data ingested/month
+
+## Bugfender
+
+[Product page](https://bugfender.com/) - [Pricing page](https://bugfender.com/pricing)
+
+* *Free tier*: 100k daily logs, 1 day log retention, 1 app.
+* *Pros*: Android & iOS SDKs, automatic UI logging, offline logs, device information, custom data.
+
+## HyperDX
+
+[Product page](https://www.hyperdx.io/) - [Pricing page](https://www.hyperdx.io/pricing)
+
+* *Free tier*: Store up to 3GB/month, 3 day log retention, 1 user.
+* *Pros*: Allows you to do full-text search across all your events without any complex search syntax, and allows you to create alerts and visualizations on top of all your events as well, supports numerous platform SDKs (Node.js, Python, .NET and etc). There are several different data collectors (Fluentd, Syslog, OpenTelemetry, Fluent Bit).
+
+## LogDog 
+
+[Product page](https://log.dog) - [Pricing page](https://log.dog/pricing)
+
+* *Free tier*: 100MB logs every month, 1 day log retention
+* *Pros*: Android & iOS SDKs, automatic wireless browser based logging ui, device info, 1-click request interception/mocking, mock apis, screenshots, screen capture, log session sharing
+* *Exceeding the free tier*: Existing logs can be viewed but new logs will be blocked
+* *Credit card required*: No
 
 ## Logentries
 
@@ -23,6 +60,22 @@
 
 * *Free tier*: Send up to 200MB/day, 7 day retention
 * *Pros*:  Centralized log management, automated log summaries, search & filters, simple scripts available to get you running in one copy & paste command.
+
+## Logsene
+
+[Product page](https://sematext.com/logsene/) - [Pricing page](https://sematext.com/logsene/#plans-and-pricing)
+
+* *Free tier*: Send up to 500 MB/day, 7 day retention
+* *Pros*: Unlimited hosts, sources, dashboard, and users. Elasticsearch API, integrated Kibana, Saved Queries, Alert Queries. Works with all major log shippers and log libraries, and has free iOS and Andoid log shipping libraries. On Premises version available, too.
+* *Exceeding the free tier*: log collection stops until midnight UTC and then resumes
+
+## New Relic
+
+[Pricing page](https://newrelic.com/pricing)
+
+* *Free tier*: 100 GB/month, 1 free full access user, unlimited free basic users.
+* *Pros*: Collect all your telemetry data (including logs) in one place to deliver full-stack observability and power AI-driven insights so you can confidently improve service reliability and accelerate time to market. Supports most popular back-end, front-end, infrastructure, and cloud frameworks and services.
+* *Exceeding the free tier*: After exceeding the 100 GB/month you will see a paywall asking you to add a credit card. Data collection will continue and access to key pages to lower data ingest will still be available.
 
 ## Splunk
 

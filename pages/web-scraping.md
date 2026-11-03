@@ -1,0 +1,81 @@
+# Web Scraping
+
+<!-- TOC depthFrom:2 -->
+
+- [Apify](#apify)
+- [Crawlbase](#crawlbase)
+- [Hermesforge](#hermesforge)
+- [PageShot](#pageshot)
+- [Scraper API](#scraper-api)
+- [SearchApi](#searchapi)
+- [SocialCrawl](#socialcrawl)
+- [PhantomJsCloud](#phantomjscloud)
+
+<!-- /TOC -->
+
+## Apify
+
+[Apify Home Page](https://www.apify.com/)
+* *Free tier*: 5,000 Free Page Crawls Per Month
+* *Pros*: Handles proxies, provides simple interface and url classification to make scraping easier
+* *Limitations*: Rate limited to 1 crawler at a time, data retention of 7 days.
+
+## Crawlbase
+
+[CrawlBase Home Page](https://crawlbase.com)
+
+* *Free tier*: 1,000 Free API Calls
+* *Pros*: Bypass blocks, captchas and allows to scrape javascript pages with a simple API without managing proxies. Supports all websites.
+* *Limitations*: Rate limited to 20 requests per second, may be increased upon request.
+
+## Hermesforge
+
+[Hermesforge Home Page](https://hermesforge.dev)
+
+* *Free tier*: 50 req/day with free API key; anonymous use without key at 10 req/day
+* *Pros*: Capture any URL as PNG, JPEG, WebP, or PDF; full-page, element selector, dark mode, custom viewports; async queue with webhook delivery; HTML-to-image rendering; no signup required for basic use
+* *Limitations*: Rate limited on free tier; higher daily limits via one-time 30-day keys
+* *Credit card required*: No
+
+## PageShot
+
+[Home page](https://pageshot.site)
+
+* *Free tier*: Free screenshot and web page capture API with no authentication required
+* *Pros*: Capture full-page screenshots, specific viewport sizes, and page content via a simple API call; no API key or signup needed
+* *Limitations*: Rate limited on the free tier
+* *Credit card required*: No
+
+## Scraper API
+
+[Scraper API Home Page](https://www.scraperapi.com/)
+
+* *Free tier*: 1,000 Free API Calls Per Month
+* *Pros*: Handles proxies, browsers, and CAPTCHAs for you, so you can scrape any web page with a simple API call.
+* *Limitations*: Rate limited to 5 requests per second, may be increased upon request.
+
+## SearchApi
+
+[SearchApi Home Page](https://www.searchapi.io/)
+
+- *Free tier*: 100 successful API calls per month.
+- *Pros*: Supports precise location geo-targeting, uses only premium US-based proxies, Structures Google results into JSON in real-time (~2 seconds).
+- *Limitations*: Rate limited to 20% monthly plan searches per 1 hour.
+
+## PhantomJsCloud
+
+[PhantomJsCloud Home Page](https://PhantomJsCloud.com/)
+
+* *Free tier*: About 500 pages/day ($0.05/day in credit)
+* *Pros*: Browser Automation, PDF Generation, Screenshots, Full request/response details in JSON.  Scales to hundreds of parallel requests.
+* *Limitations*: Free tier blocked from using the Builtin Anonymous Proxy system.
+
+## SocialCrawl
+
+[SocialCrawl pricing](https://www.socialcrawl.dev/pricing)
+
+* *Free tier*: 100 credits on signup; credits never expire. Standard endpoints cost 1 credit. Cache hits and failed requests are not charged.
+* *Pros*: One GET /v1 API and one JSON schema across 50+ social and commerce platforms. OpenAPI spec published at /v1/openapi.json.
+* *Limitations*: Free allotment is one-time, not monthly. Advanced/premium endpoints cost 5 or 10 credits; /v1/search/everywhere costs 20. 50 concurrent requests per key.
+* *Exceeding the free tier*: API returns 402 until more credits are purchased.
+* *Credit card required*: No

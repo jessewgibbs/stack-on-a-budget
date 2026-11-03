@@ -2,31 +2,88 @@
 
 <!-- TOC depthFrom:2 -->
 
+- [AliasMail](#aliasmail)
+- [Elastic Email](#elastic-email)
 - [Emaillabs](#emaillabs)
-- [Mailgun](#mailgun)
+- [Parsio Email Parser](#parsio-email-parser)
+- [Postmark](#postmark)
+- [SendGrid](#sendgrid)
 - [SparkPost](#sparkpost)
+- [Mailazy](#mailazy)
+- [Mailtrap](#mailtrap)
 
 <!-- /TOC -->
 
+## AliasMail
+
+[Product page](https://aliasmail.space/)
+
+* *Free tier*: Permanent email forwarding aliases, disposable inboxes, real-time webhooks, No credit card required
+* *Pros*: Zero-log privacy forwarding, custom alias handles, HMAC-SHA256 signed webhooks for instant delivery
+* *Limitations*: Free tier includes standard rate limits and community support
+* *Exceeding the free tier*: Generous free limits, optional paid plans available for custom domains
+* *Credit card required*: No
+
+## Elastic Email
+
+[Pricing page](https://elasticemail.com/email-api-pricing)
+
+* *Free tier*: 100 emails/day
+* *Pros*: powerful insights, HTTP API, 24/7 support
+* *Exceeding the free tier*: billing starts, no service interruptions
+
 ## Emaillabs
 
-[Pricing page](http://emaillabs.io/pricing/)
+[Pricing page](https://emaillabs.io/en/pricing/)
 
-* *Free tier*: 12,000 emails/month
+* *Free tier*: 300 emails/day
 * *Pros*: SMTP or REST, API for logs and analytics
 * *Exceeding the free tier*: billing starts, no service interruptions
 
-## Mailgun
+## Parsio Email Parser
 
-[Pricing page](http://www.mailgun.com/pricing)
+[Product page](https://parsio.io)
 
-* *Free tier*: 10,000 emails/month (can apparently be raised up to 30,000 emails/month permanently by signing up through [this page](http://www.mailgun.com/google))
-* *Pros*: great API, scheduling, SMTP or REST, logs and analytics,
+* *Free tier*: Completely free
+* *Pros*: Easy to use: Forward emails, extract data, send to your app (via webhooks)
+* *Exceeding the free tier*: For the moment completely free but they may add pricing plans later
+
+## Postmark
+
+[Pricing page](https://postmarkapp.com/pricing)
+
+* *Free tier*: 100 emails/month
+* *Pros*: pre-built client libraries (Python, Php, Node.js...), SMTP or REST, webhooks, No credit card required
+* *Exceeding the free tier*: billing starts, no service interruptions
+
+## SendGrid
+
+[Pricing page](https://sendgrid.com/pricing/)
+
+* *Free tier*: 100 emails/day
+* *Pros*: Available API, SMTP relay and webhooks
+* *Limitations*: No email validation, no dedicated IP
 
 ## SparkPost
 
 [Pricing page](https://www.sparkpost.com/pricing/)
 
-* *Free tier*: 100,000 emails/month
+* *Free tier*: 500 emails/month, 100 emails/day test accounts
 * *Pros*: pre-built client libraries (Python, Php, Node.js...), SMTP or REST, real-time data with webhooks
-* *Exceeding the free tier*: sending stops, user must add a credit card
+* *Exceeding the free tier*: sending stops, user must add a credit card / upgrade plan
+
+## Mailazy
+
+[Pricing page](https://mailazy.com/pricing.html)
+
+* *Free tier*: 10000 emails/month, 350 emails/day sending limit, get upto 50,000 email/month in beta program
+* *Pros*: Integrate either with SMTP or REST Email API, real-time analytics and logs, No credit card required
+* *Exceeding the free tier*: sending stops, upgrade plan
+
+## Mailtrap
+
+[Pricing page](https://mailtrap.io/pricing/)
+
+* *Free tier*: 4,000 emails/month, 150 emails/day via Email API and SMTP. Email Marketing: 500 contacts, 1,500 emails/month. Email Sandbox: 50 test emails/month, 1 sandbox, 10 stored emails
+* *Pros*: Full Email API and SMTP sending platform with sandbox testing, delivery analytics, and contact management. No credit card required
+* *Exceeding the free tier*: Sending stops, upgrade plan required

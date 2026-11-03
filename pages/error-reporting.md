@@ -2,10 +2,50 @@
 
 <!-- TOC depthFrom:2 -->
 
+- [Bugsnag](#bugsnag)
+- [LogBrew](#logbrew)
+- [LogRocket](#logrocket)
+- [Muscula](#muscula)
 - [Rollbar](#rollbar)
 - [Sentry](#sentry)
+- [Telemetry Tracker](#telemetry-tracker)
 
 <!-- /TOC -->
+
+## Bugsnag
+[Pricing page](https://www.bugsnag.com/pricing)
+
+* *Free tier*: 7,500 free events monthly, unlimited projects, issue tracker and chat integrations, 7-day data storage
+* *Pros*: Advanced error search and filtering, error spike and regression alerts, daily and weekly summary emails, support for sourcemaps, dSYMs, and Proguard mapping files
+* *Limitations*: Limited to 1 user
+* *Exceeding the free tier*: Error reporting continues, but only new errors will be recorded. You'll be alerted to upgrade to increase your data allotment.
+
+## LogBrew
+
+[Product page](https://logbrew.co/) - [Pricing page](https://logbrew.co/en/pricing)
+
+* *Free tier*: 100,000 errors/month, 50 GB of logs, 50 GB of app metrics, 50 million trace spans, 30-day retention, unlimited team members and projects
+* *Pros*: Errors are grouped into issues and linked to their logs, trace, release and affected users. Every feature is on every plan, including alerts by email, Slack, Discord, Microsoft Teams and signed webhooks, source map and dSYM upload, and a hosted MCP server and CLI for coding agents. SDKs for JavaScript, React Native, Python, Go, Java, .NET, PHP, Ruby, Rust and Swift, plus OpenTelemetry.
+* *Exceeding the free tier*: Each meter warns at 80%. At 100%, only that signal type pauses until the monthly reset. There are no overage charges.
+* *Credit card required*: No
+
+## LogRocket
+
+[Pricing Page](https://logrocket.com/pricing/)
+
+- *Free tier*: Access to all core features (log inspection, application state, video replay, help-desk integrations, etc.).
+- *Pros*: Stand out feature (above competition) is the ability to view a video of what the end-user saw when the error/exception was triggered/thrown.
+- *Limitations*: 1000 sessions (continuous period of user activity) and 14 day data retention.
+- *Exceeding the free tier*: Notified on how to upgrade to higher tier and exceeding sessions will not be logged.
+
+## Muscula
+
+[Product page](https://www.muscula.com/) - [Pricing page](https://www.muscula.com/pricing)
+
+* *Free tier*: 1000 errors monthly, 30 days retetion, uptime monitoring
+* *Pros*: Eeasy to use, and easy to integrate. 
+* *Exceeding the free tier*: warning messages
+
 ## Rollbar
 
 [Pricing page](https://rollbar.com/pricing/)
@@ -18,7 +58,16 @@
 
 [Pricing page](https://sentry.io/pricing/)
 
-* *Free tier*: 10 events/minute, 5000 events/day, 30-day history
-* *Pros*: supports source maps, view source code in stack traces, request/session information available, filtering, API access, Single sign-on
-* *Limitations*: No pay-as-you-go model, 60-second rolling rate limit, limit 1 user
+* *Free tier*: 5,000 events/month, 30-day history
+* *Pros*: [BSD-licensed open source](https://github.com/getsentry/sentry), supports source maps and symbolication, view source code in stack traces, request/session information available, filtering, API access, Single sign-on. Sentry also comes with free tier for application monitoring and session replays.
+* *Limitations*: Limit 1 user
 
+## Telemetry Tracker
+
+[Product page](https://telemetry-tracker.com/) - [Pricing page](https://telemetry-tracker.com/#pricing)
+
+* *Free tier*: 250K ingest units/month (one unit is one error, event or session), 14-day retention, 1 project, 2 API keys
+* *Pros*: Grouped errors with release tags, source map upload for readable stack traces, alerts by email, webhooks, Slack, Discord, Microsoft Teams and Telegram. Also records events, sessions and Web Vitals. SDKs for Next.js, React, Vue, Nuxt, React Native, Node.js and NestJS. [MIT-licensed open source](https://github.com/Telemetry-Tracker/telemetry-tracker), can be self-hosted.
+* *Limitations*: JavaScript/TypeScript SDKs only (no native iOS/Android SDKs), community support only on the free plan
+* *Exceeding the free tier*: New ingest is rejected with HTTP 429 until the next calendar month. Stored data is kept for the retention window and there is no overage charge.
+* *Credit card required*: No

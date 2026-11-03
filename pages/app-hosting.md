@@ -2,94 +2,190 @@
 
 <!-- TOC depthFrom:2 -->
 
-- [AppHarbor](#appharbor)
+- [Alwaysdata](#alwaysdata)
 - [AWS EC2](#aws-ec2)
 - [Azure App Service](#azure-app-service)
+- [Cloady](#cloady)
+- [Faable](#faable)
+- [Fly](#fly)
 - [GearHost](#gearhost)
-- [Gomix](#gomix)
 - [Google App Engine](#google-app-engine)
-- [Heroku](#heroku)
-- [IBM Bluemix](#ibm-bluemix)
+- [Google Compute Engine](#google-compute-engine)
+- [IBM Cloud](#ibm-cloud)
+- [Koyeb](#koyeb)
+- [Netlify](#netlify)
 - [OpenShift](#openshift)
-- [Zeit Now](#zeit-now)
+- [Oracle](#oracle)
+- [Prisma Compute](#prisma-compute)
+- [Qoddi](#qoddi)
+- [Render](#render)
+- [The Vibe Hosting](#the-vibe-hosting)
+- [Vercel](#vercel)
 
 <!-- /TOC -->
 
-## AppHarbor
+## Alwaysdata
 
-[Pricing page](https://appharbor.com/pricing)
+[Pricing page](https://alwaysdata.com/)
 
-* *Free tier*: 1 worker unit
-* *Pros*: auto scaling, deploy with git, one of few PaaS for .NET apps
-* *Limitations*: no custom domain
+* *Free tier*: up to 100MB overall
+* *Pros*: Unlimited sites and applications (are supported Node.js, Python, PHP, Ruby, Elixir, Java, Deno and .NET), full SSL support, create schedules tasks, automatic backups each day with a retention of 30 days, domain administration with unlimited domains and emails
 
 ## AWS EC2
 
 [Product page](https://aws.amazon.com/free/)
 
 * *Free tier*: 750 hours/month of t2.micro instances
-* *Limitations*: expires 12 months after sign-up
+* *Limitations*: Expires 12 months after sign-up
+* *Credit card required*: Yes, [you must add a valid [credit card, debit card, or another payment method](https://repost.aws/knowledge-center/free-tier-payment-method))
 
 ## Azure App Service
 
 [Pricing page](https://azure.microsoft.com/en-us/pricing/details/app-service/)
 
 * *Free tier*: 10 applications, 1 shared core, 1GB RAM and 1GB storage per application
-* *Pros*: supports .NET, easy publishing directly from Git/GitHub/Bitbucket
-* *Limitations*: cumulative limit for CPU (60 minutes allowed every 24 hours), no SLA, no custom domain, no SSL
+* *Pros*: Supports .NET, easy publishing directly from Git/GitHub/Bitbucket
+* *Limitations*: Cumulative limit for CPU (60 minutes allowed every 24 hours), No uptime SLA, No custom domain, No SSL
+* *Credit card required*: Yes, you must add a [credit or debit card](https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/change-credit-card)
+
+## Cloady
+
+[Product and pricing page](https://cloady.com)
+
+* *Free tier*: 0.5 vCPU, 1 GB RAM, 5 GB SSD storage and 200 GB monthly traffic, shared across applications in a workspace; no time-limited trial credits
+* *Pros*: Deploy applications and databases from GitHub, Docker images, uploaded folders or templates; custom domains with automatic TLS; browser terminal and database UI
+* *Limitations*: Phone verification is required. The free resources are a shared workspace allowance, not a separate allowance per application. Managed backups are an optional paid add-on.
+* *Exceeding the free tier*: If any free-tier threshold is exceeded, the whole allocated configuration becomes billable, rather than only the excess. Paid resources are configurable in the pricing calculator.
+* *Credit card required*: No, within the free tier
+
+## Faable
+
+[Pricing page](https://faable.com/docs/deploy/pricing)
+
+* *Free tier*: 1 instance per project with 0.5 CPU / 1 GB RAM, 10 GB bandwidth, 10 successful deployments per day, build artifacts up to 512 MB, automatic SSL and a WAF, plus OAuth 2.0 / OIDC authentication
+* *Pros*: framework auto-detection for Node.js and Python (no Dockerfile or CI config), push-to-deploy from GitHub, all infrastructure in the EU
+* *Limitations*: free apps sleep after 2 hours without traffic and cold start on the next request; Docker and Dockerfile builds need a paid plan
+* *Exceeding the free tier*: extra deployments are not dropped — the build completes and the release waits, going live at 00:00 UTC when the counter resets; builds over 512 MB stop with an `artifact_too_large` error
+* *Credit card required*: No
+
+## Fly
+
+[Pricing page](https://fly.io/docs/about/pricing/)
+
+* *Free tier*: 2340 shared CPU hours per month, 160GB outbound bandwidth per month (unlimited inbound), Unlimited IPv6 and 1 IPv4 Anycast IPs per active app, 10 active certificates per app
+* *Limitations*: No uptime SLA, No web app (access through CLI only)
+* *Credit card required*: [Yes](https://fly.io/docs/about/credit-cards/)
 
 ## GearHost
 
 [Pricing page](https://www.gearhost.com/pricing)
 
-* *Free tier*: 1 shared node and 1 worker at max, 100MB storage, 1GB bandwidth/month, custom domains
-* *Pros*: supports .NET (4.6), PHP (5.3-5.5) and Node.js apps, MSSQL and MySQL databases, easy publishing over FTP, WebDeploy or directly from Git/GitHub/Bitbucket
-* *Limitation*: cumulative limits for CPU (60 minutes allowed every 24 hours) and RAM (256 MB allocated every hour), 1 GB bandwidth allowd every 24 hours, [250 concurrent connections](https://www.gearhost.com/documentation/difference-free-standard-reserved-plans), no SSL support, only 32bits processes
-* *Exceeding the free tier*: whenever the CPU usage, RAM usage or consumed bandwidth reaches the limit within its timefame, the application goes offline until the counter resets
+* *Free tier*: 1 shared node and 1 worker at max, 100MB storage, 1GB bandwidth/month, Custom domains
+* *Pros*: Supports .NET (4.6), PHP (5.3-5.5) and Node.js apps, MSSQL and MySQL databases, Easy publishing over FTP, WebDeploy or directly from Git/GitHub/Bitbucket
+* *Limitations*: Cumulative limits for CPU (60 minutes allowed every 24 hours) and RAM (256MB allocated every hour), 1GB bandwidth allowd every 24 hours, [250 concurrent connections](https://www.gearhost.com/documentation/difference-free-standard-reserved-plans), No SSL support, only 32bits processes
+* *Exceeding the free tier*: If CPU usage, RAM usage or bandwidth consumed reaches the limit within its timefame, the application goes offline until the counter resets
 
-## Gomix
-
-[About page](https://gomix.com/about/)
-
-* *Free tier*: instantly deployed Node.js app with collaboration tool
-* *Pros*: based on Node.js, online editor with real time collaboration, live redeploy, great for prototyping and collaboration
-* *Limitations*: no custom domain, memory limited to 64MB
 
 ## Google App Engine
 
 [Product page](https://cloud.google.com/appengine)
 
-* *Free tier*: 28 instance hours/day, 1GB outgoing traffic/day, 1GB incoming traffic/day
-* *Pros*: managed, automatic scaling, plays well with other Google Cloud features (load balancing, datastores...), multiple languages supported
-* *Limitations*: free tier only applies to standard environment which supports Python, Java, PHP and Go. Flexible environment with Node.js and Ruby is not in the free tier.
+* *Free tier*: 28 instance hours/day, 1GB outbound bandwidth/day, 1GB inbound bandwidth/day, 5GB Cloud storage, Shared memcache, 1000 search operations per day, 10MB search indexing, 100 emails per day
+* *Pros*: Managed, Autoscaling, Works well with other Google Cloud features (load balancing, datastores, etc.), Multiple languages supported
+* *Limitations*: Free tier only applies to a standard environment which supports Python, Java, PHP and Go
+* *Credit card required*: Yes, you must have a [valid payment method](https://cloud.google.com/appengine/docs/standard/payment-instrument), even for the free tier
 
-## Heroku
+## Google Compute Engine
 
-[Pricing page](https://www.heroku.com/pricing)
+[Product page](https://cloud.google.com/compute/)
 
-* *Free tier*: one "dyno" (512MB memory), custom domains
-* *Pros*: supports multiple languages (Node.js, Ruby, Java, PHP, Python, Go, Scala or Clojure)
-* *Limitations*: instance will sleep after 30 mins of inactivity
+* *Free tier*: 1 f1-micro instance per month (US regions only), 30GB-months HDD, 5GB-months snapshot, 1GB network egress from North America to all region destinations per month (excluding China and Australia)
+* *Pros*: Works well with other Google Cloud features (load balancing, datastores, etc.)
+* *Limitations*: Limited to US region only for now
+* *Credit card required*: Yes, you must provide a [credit card or other payment method](https://cloud.google.com/free/docs/free-cloud-features), even for a free trial
 
-## IBM Bluemix
+## IBM Cloud
 
-[Pricing page](https://console.ng.bluemix.net/pricing/)
+[Pricing page](https://cloud.ibm.com/pricing/)
 
 * *Free tier*: 512MB/month
-* *Pros*: can deploy multiple smaller instance for free for a total of 512MB (4x128MB, 2x256MB...), supports multiple languages (Java, JS, Go, PHP, Python Ruby), supports containers
+* *Pros*: Can deploy multiple smaller instance for free for a total of 512MB (4x128MB, 2x256MB...), Supports multiple languages (Java, JS, Go, PHP, Python Ruby), Supports containers
+
+## Koyeb
+
+[Pricing page](https://www.koyeb.com/pricing)
+
+* *Free tier*: 2 nano services, 1vCPU per service, 256MB of RAM per service, 2.5GB SSD per service, 100GB outbound bandwidth (unlimited inbound)
+* *Pros*:  Native autoscaling, Intuitive web interface and CLI, Deploy with Git, Edge CDN, Cron background tasks, Good observability, Supports containers
+* *Limitations*: Custom domains not supported yet, Websockets not supported yet, No uptime SLA on free tier.
+
+## Netlify
+
+[Pricing page](https://www.netlify.com/pricing/)
+
+* *Free tier*: 100GB bandwidth per month, 1 concurrent build, 300 build minutes/month, 125000 serverless function invocations per month, 100 form submissions per month, 1000 active Identity users per month, 2500 large media transformations per month
+* *Pros*: Deploy with Git, Edge CDN
+* *Limitations*: No site analytics on free tier
+* *Credit card required*: No
 
 ## OpenShift
 
 [Pricing page](https://www.openshift.com/pricing/index.html)
 
-* *Free tier*: 3 small gears (1 CPU, 512MB memory and 1GB storage)
-* *Pros*: no time limitation, gears can be used to deploy apps in a lot of languages and/or databases, many deployment templates are provided
-* *Limitations*: deployment requires installation of OpenShift app, 'idle' apps take longer to load (>30s)
+* *Free tier*: 1 project, 2GB memory, 2GB storage, no custom domain
+* *Pros*: Gears can be used to deploy apps in a lot of languages and/or databases, Many deployment templates are provided
+* *Limitations*: Deployment requires installation of OpenShift app, Idle apps take longer to load (>30s)
 
-## Zeit Now
+## Oracle
 
-[Pricing page](https://zeit.co/now#pricing)
+[Pricing page](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier.htm)
 
-* *Free tier*: 1GB storage, 1GB bandwidth/month, 20 deploys/month, free backups
-* *Pros*: auto scaling, multi cloud, free backups, served over HTTP/2, use Node.js last version, can also host static websites
-* *Limitations*: maximum of 1MB per file, no custom domain, source code is always public
+* *Free tier*: 2 Compute(AMD) Micro instances (1/8th OCPU, 1GB memory each), Ampere A1 Compute(Arm) instances (4 OCPUs and 24GB of memory that you can allocate flexibly), 20TB outbound bandwidth (unlimited inbound) [Read more](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm)
+* *Pros*: Free forever virtual machines
+* *Limitations*: OS selection restricted to Oracle Enterprise Linux, CentOS and Ubuntu
+
+## Prisma Compute
+
+[Pricing page](https://www.prisma.io/pricing)
+
+* *Free tier*: 1M requests, 360 GB-hours of memory, 4 active vCPU-hours and 10 GB outbound bandwidth per month
+* *Pros*: Part of the Prisma developer platform: hosts TypeScript apps (Node.js, Bun, Next.js) next to a [Prisma Postgres](https://www.prisma.io/postgres) database in the same project, deploy from the CLI or on git push, each feature branch can get a preview with its own database, idle apps scale to zero
+* *Limitations*: No WebSocket servers, cron jobs or persistent filesystem, each service runs in one region, a request must start responding within 60 seconds
+* *Exceeding the free tier*: No usage billing on the free plan, so nothing is charged; to go past the limits you move to a paid plan (from $10/month plus usage)
+* *Credit card required*: No
+
+## Qoddi
+
+[Pricing page](https://qoddi.com/#pricing)
+
+* *Free tier*: 512MB RAM, 1 vCPU
+* *Pros*: Always online, Unlimited build minutes
+* *Limitations*: No uptime SLA on free tier
+
+## Render
+
+[Pricing page](https://render.com/pricing)
+
+* *Free tier*: 100GB outbound bandwidth per month (unlimited inbound)
+* *Pros*: Includes CDN, Deploy with git, Custom domains, Automatic HTTPS
+* *Limitations*: Free tier does not allow tracking deployments from Github. You can use [this tool](https://github.com/marketplace/actions/render-github-action) instead if you prefer
+* *Credit card required*: No
+
+## The Vibe Hosting
+
+[Pricing page](https://thevibehosting.com/pricing)
+
+* *Free tier*: $0.90 of credit every month without signup (servers up to 256 MB RAM that sleep when idle, 2 per network); $2.25 every month with a verified phone, enough to keep a 512 MB server running 24/7 (up to 2 GB RAM per server, unlimited servers, custom domains). CPU is not billed.
+* *Pros*: Each server is a full root Ubuntu machine in a gVisor sandbox with its own HTTPS subdomain, created with a single HTTP call (`POST /create`) and no account setup. Designed so AI coding agents (Claude Code, Cursor, Codex) can create servers and deploy on their own via a published SKILL.md. Sleeping servers keep their files and wake on the next HTTP request or SSH connection.
+* *Limitations*: Without a verified phone, servers sleep when idle. Max 4 GB RAM per server, no GPUs. Service is in beta, no uptime SLA.
+* *Exceeding the free tier*: Usage is paid from prepaid credit (RAM $0.005/GB-hour while awake, egress $0.10/GB, disk $0.25/GB-month). If credit runs out, servers are paused after a short grace period until credit is added.
+* *Credit card required*: No
+
+## Vercel
+
+[Pricing page](https://vercel.com/pricing)
+
+* *Free tier*: 100GB bandwidth per month, 100GB-Hours serverless function execution, 1000 image optimizations, Unlimited serverless function invocations, 100000 edge function invocations, 6000 build minutes/month, 1 concurrent build, 50 domains per project, 3 projects per git repository, 100 deployments per day, 12 serverless functions written in Node.js, Go, Python and Ruby
+* *Pros*:  Deploy with git, Edge CDN, Preview deployments, Next.js API endpoints are converted to serverless functions automatically. [Also see](static-app-hosting.md#vercel) for static hosting
+* *Limitations*: No uptime SLA on free tier, Free tier does not allow commercial usage, observability is limited, Free tier has limited analytics
+* *Credit card required*: No
